@@ -32,6 +32,18 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.action, .our_users_heading, .productive_users, /*.focus_heading*/{
+    margin-top: 100px;
+}
+.banner_title, .action_title, .focus_heading{
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 64px;
+    font-weight: 800;
+}
+.text-center{
+    text-align: center;
+}
 /* BANNER SECTION */
 .banner {
     display: flex;
@@ -66,13 +78,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-.banner_title, .action_title{
-    margin-bottom: 20px;
-    color: #222;
-    font-size: 64px;
-    font-weight: 800;
-}
-.action_description{
+
+.action_description, .focus_description{
     font-family: "Raleway", sans-serif;
     color: black;
     font-size: 24px;
@@ -80,8 +87,9 @@ a {
 }
 /* HEADER AND BANNER END */
 /* ACTION STARTS */
-.action{
-    margin-top: 150px;
+
+.focus_heading, .focus_description{
+    text-align: center;
 }
 .action_container{
     display: flex;
@@ -95,9 +103,6 @@ a {
 }
 /* ACTION ENDS */
 /* /PRODUCTIVE USERS STARTS */
-.productive_users {
-    margin-top: 150px;
-}
 .productive_users_container {
     margin: 0 auto;
     padding: 50px;
@@ -141,9 +146,6 @@ a {
     background-color: white;
     border-radius: 24px;
 }
-.our_users_heading{
-    margin-top: 150px;
-}
 .testimonial_wrapper {
     margin-top: 50px;
     display: flex;
@@ -175,3 +177,26 @@ a {
     text-decoration: none;
 }
 /* OUR USERS ENDS */
+/* FOCUS BETTER STARTS */
+.focus_better{
+    margin: 0 auto;
+    border-radius: 14px;
+    text-align: center;
+    align-items: center;
+    max-width: 1440px;
+    background-color: #f7f7f7;
+
+}
+.better_container{
+    margin-top: 100px;
+    padding: 71px;
+}
+.focus_better_content{}
+.focus_img{
+    margin-top: 20px;
+
+}
+.better_img{
+    border-radius: 50px;
+}
+/* FOCUS BETTER ENDS */
