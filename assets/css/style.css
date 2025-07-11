@@ -6,7 +6,7 @@
 }
 body {
     font-family: "Inter", sans-serif;
-    background-color: #f4f4ff;
+    background-color: #f3f9ff;
 }
 /* BUTTON STYLES */
 .btn {
@@ -49,7 +49,10 @@ a {
 .text-color{
     color: black;
 }
-.action, .action_container, .our_users_heading, .productive_users, /*.focus_heading*/{
+.action_container, .our_users_heading, /*.focus_heading*/{
+    margin-top: 100px;
+}
+.action, .productive_users{
     margin-top: 100px;
 }
 .our_users_heading{
@@ -110,6 +113,9 @@ a {
 
 .focus_heading, .focus_description{
     text-align: center;
+}
+.action,{
+    margin-top: 200px;
 }
 .action_container{
     display: flex;
