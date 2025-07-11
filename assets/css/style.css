@@ -8,6 +8,11 @@ body {
     font-family: "Inter", sans-serif;
     background-color: #f3f9ff;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* BUTTON STYLES */
 .btn {
     margin-top: 24px;
@@ -20,21 +25,6 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    box-sizing: border-box;
-    transition: 0.33s ease-in-out;
-}
-.form_btn {
-    margin-top: -2px;
-    width: 401px;
-    padding: 10px 20px;
-    background-color: #6c00ff;
-    color: white;
-    text-align: center;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    box-sizing: border-box;
     transition: 0.33s ease-in-out;
 }
 .btn:hover {
@@ -42,31 +32,39 @@ body {
     color: #5500cc;
     border-color: #5500cc;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
-.text-color{
-    color: black;
-}
-.action_container, .our_users_heading, /*.focus_heading*/{
+
+/* SECTIONS SPACING */
+.action,
+.our_users_heading,
+.productive_users {
     margin-top: 100px;
 }
-.action, .productive_users{
-    margin-top: 100px;
+.act_img{
+    border-radius: 50px;
 }
-.our_users_heading{
-    margin-top: 100px;
+/* FORM INPUT STYLES */
+.touch_form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
-.banner_title, .action_title, .focus_heading, .form_title{
-    margin-bottom: 20px;
+.touch_form input:focus {
+    border-color: #6c00ff;
+    outline: none;
+}
+.touch_form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
     color: #222;
-    font-size: 64px;
-    font-weight: 800;
 }
-.text-center{
-    text-align: center;
-}
+
 /* BANNER SECTION */
 .banner {
     display: flex;
@@ -75,25 +73,22 @@ a {
     height: 100vh;
     justify-content: space-between;
     background-size: cover;
-    background-image: url('../img/Hero-bg.png');
+    background-image: url("../img/Hero-bg.png");
     background-repeat: no-repeat;
     background-position: center;
 }
-/* HEADER */
 .header {
     display: flex;
     padding: 40px 80px;
     align-items: center;
     justify-content: space-between;
 }
-/* LOGO */
 .logo {
     font-family: "Raleway", sans-serif;
-    color: #4E47FF;
+    color: #4e47ff;
     font-size: 34px;
     font-weight: 900;
 }
-/* BANNER */
 .banner_container {
     display: flex;
     flex-grow: 1;
@@ -101,41 +96,36 @@ a {
     align-items: center;
     justify-content: center;
 }
+.banner_title,
+.action_title,
+.focus_heading,
+.form_title {
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 64px;
+    font-weight: 800;
+}
 
-.action_description, .focus_description{
+/* ACTION */
+.action_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.action_description,
+.focus_description {
     font-family: "Raleway", sans-serif;
     color: black;
     font-size: 24px;
     font-weight: 400;
 }
-/* HEADER AND BANNER END */
-/* ACTION STARTS */
 
-.focus_heading, .focus_description{
-    text-align: center;
-}
-.action,{
-    margin-top: 200px;
-}
-.action_container{
-    display: flex;
-    text-align: left;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.action_content{}
-.act_img{
-    border-radius: 48px;
-}
-/* ACTION ENDS */
-/* /PRODUCTIVE USERS STARTS */
+/* PRODUCTIVE USERS */
 .productive_users_container {
     margin: 0 auto;
     padding: 50px;
     max-width: 1140px;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     background-color: #e3e7ff;
     border-radius: 24px;
 }
@@ -143,28 +133,19 @@ a {
     display: flex;
     padding-top: 28px;
     font-size: 26px;
-    border-radius: 24px;
     justify-content: space-between;
 }
-.countDownList{
+.countDownList {
     justify-content: space-evenly;
 }
-.productive_heading{
+.productive_heading {
     font-size: 48px;
 }
-/* /PRODUCTIVE USERS ENDS */
-/* OUR USERS STARTS */
+
+/* TESTIMONIALS */
 .our_users {
     margin: 0 auto;
     max-width: 1440px;
-    align-items: center;
-    text-align: left;
-}
-.our_users_heading{
-    font-size: 28px;
-    font-weight: 700;
-    align-items: center;
-    text-align: center;
 }
 .our_users_content {
     padding: 36px;
@@ -172,65 +153,65 @@ a {
     background-color: white;
     border-radius: 24px;
 }
+.our_customer_say{
+    text-align: center;
+}
 .testimonial_wrapper {
     margin-top: 50px;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
 }
-.users_description{
+.users_description {
     margin-top: 8px;
     font-size: 18px;
 }
 .our_users_stars {
     margin-top: 6px;
 }
-.user{}
-.user_img{
+.user_img {
     width: 100%;
 }
-.user_avatar{
+.user_avatar {
     display: flex;
     flex-direction: row;
     margin-top: 18px;
 }
-.border_radius{
+.border_radius {
     border-radius: 24px;
 }
-.users_ul_li{
+.users_ul_li {
     margin-left: 18px;
     list-style: none;
-    text-decoration: none;
 }
-/* OUR USERS ENDS */
-/* FOCUS BETTER STARTS */
-.focus_better{
+
+/* FOCUS SECTION */
+.focus_better {
     margin: 0 auto;
     border-radius: 14px;
     text-align: center;
-    align-items: center;
     max-width: 1440px;
     background-color: #f7f7f7;
-
 }
-.better_container, .touch {
+.better_container,
+.touch {
     margin-top: 100px;
     padding: 71px;
     margin-bottom: 30px;
 }
-.focus_better_content{}
-.focus_img{
+.better_img {
     margin-top: 20px;
-
-}
-.better_img{
     border-radius: 50px;
 }
-/* FOCUS BETTER ENDS */
-/* IN TOUCH STARTS */
-.touch{
+
+/* TOUCH SECTION */
+.touch {
     margin: 0 auto;
     width: 1440px;
+}
+.touch_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 .touch_form {
     display: flex;
@@ -239,33 +220,13 @@ a {
     width: 100%;
     max-width: 400px;
 }
-.touch_form input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: "Inter", sans-serif;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
+/* FOOTER STARTS */
+.footer_wrapper{}
+.footer_container{}
+.footer_title{}
+.footer_description{}
+.footer_tags a{}
+.a{
+    list-style: none;
 }
-
-.touch_form input:focus {
-  border-color: #6c00ff;
-  outline: none;
-}
-.touch_container{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.form_intro{
-
-}
-.form_title{
-    margin-top: 60px;
-}
-.
-/* IN TOUCH ENDS */
-
-
+/* FOOTER ENDS */
