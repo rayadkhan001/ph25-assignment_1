@@ -23,6 +23,20 @@ body {
     box-sizing: border-box;
     transition: 0.33s ease-in-out;
 }
+.form_btn {
+    margin-top: -2px;
+    width: 401px;
+    padding: 10px 20px;
+    background-color: #6c00ff;
+    color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: 0.33s ease-in-out;
+}
 .btn:hover {
     background-color: white;
     color: #5500cc;
@@ -32,10 +46,16 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.action, .our_users_heading, .productive_users, /*.focus_heading*/{
+.text-color{
+    color: black;
+}
+.action, .action_container, .our_users_heading, .productive_users, /*.focus_heading*/{
     margin-top: 100px;
 }
-.banner_title, .action_title, .focus_heading{
+.our_users_heading{
+    margin-top: 100px;
+}
+.banner_title, .action_title, .focus_heading, .form_title{
     margin-bottom: 20px;
     color: #222;
     font-size: 64px;
@@ -187,9 +207,10 @@ a {
     background-color: #f7f7f7;
 
 }
-.better_container{
+.better_container, .touch {
     margin-top: 100px;
     padding: 71px;
+    margin-bottom: 30px;
 }
 .focus_better_content{}
 .focus_img{
@@ -200,3 +221,45 @@ a {
     border-radius: 50px;
 }
 /* FOCUS BETTER ENDS */
+/* IN TOUCH STARTS */
+.touch{
+    margin: 0 auto;
+    width: 1440px;
+}
+.touch_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.touch_form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.touch_form input:focus {
+  border-color: #6c00ff;
+  outline: none;
+}
+.touch_container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.form_intro{
+
+}
+.form_title{
+    margin-top: 60px;
+}
+.
+/* IN TOUCH ENDS */
+
+
